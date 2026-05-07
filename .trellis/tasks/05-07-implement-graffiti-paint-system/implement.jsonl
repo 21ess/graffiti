@@ -1,0 +1,5 @@
+{"file": "frontend/directory-structure.md", "reason": "Project layout — where to place new scenes/scripts under entities/"}
+{"file": "frontend/component-guidelines.md", "reason": "Scene composition patterns — TileMapLayer setup, node structure, dependency injection"}
+{"file": "frontend/hook-guidelines.md", "reason": "Signal conventions, lifecycle order (_init/_ready), input handling via _unhandled_input"}
+{"file": "frontend/type-safety.md", "reason": "GDScript coding standards — typed variables, naming, @onready, preload patterns"}
+{"file": "frontend/state-management.md", "reason": "State patterns — node-local state, debuff state management"}
