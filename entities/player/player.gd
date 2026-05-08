@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 ## 玩家实体 — 用于移动和攻击的实体
-## Debuff 暂时硬编码在 player.gd 中
+## Debuff 暂时硬编码在 player.gd 中，后续考虑拆分模块
 
 const PaintLayerScript = preload("res://entities/terrain/paint/paint_layer.gd")
 
@@ -102,7 +102,7 @@ func _update_debuff() -> void:
 		current_debuff = paint
 		debuff_timer = 0.0
 
-
+## 应用熔岩 DOT 效果
 func _apply_lava_dot(delta: float) -> void:
 	debuff_timer += delta
 	if debuff_timer >= LAVA_DOT_INTERVAL:
