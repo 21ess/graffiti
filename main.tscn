@@ -2,14 +2,19 @@
 
 [ext_resource type="Script" uid="uid://cdep10f86hd38" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://d2vfy081rbj02" path="res://entities/player/player.tscn" id="2_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://bkhd5uwh3oubr" path="res://entities/terrain/ground_layer.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cfrr6kmwyaxjv" path="res://entities/terrain/paint/paint_layer.tscn" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://bkhd5uwh3oubr" path="res://entities/terrain/ground/ground_layer.tscn" id="3_h2yge"]
 
 [node name="Main" type="Node" unique_id=1303069440]
 script = ExtResource("1_ig7tw")
 
+[node name="PaintLayer" parent="." unique_id=767520991 instance=ExtResource("2_1bvp3")]
+z_index = 1
+
 [node name="GroundLayer" parent="." unique_id=1669641962 instance=ExtResource("3_h2yge")]
 
 [node name="Player" parent="." unique_id=1917975196 instance=ExtResource("2_0xm2m")]
+z_index = 2
+y_sort_enabled = false
 
 [node name="StartPosition" type="Marker2D" parent="." unique_id=848476716]
-position = Vector2(200, 100)
