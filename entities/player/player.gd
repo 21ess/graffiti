@@ -102,7 +102,7 @@ func _update_debuff() -> void:
 		current_debuff = paint
 		debuff_timer = 0.0
 
-
+## 应用熔岩 DOT 效果
 func _apply_lava_dot(delta: float) -> void:
 	debuff_timer += delta
 	if debuff_timer >= LAVA_DOT_INTERVAL:
