@@ -107,9 +107,10 @@ func _apply_lava_dot(delta: float) -> void:
 	debuff_timer += delta
 	if debuff_timer >= LAVA_DOT_INTERVAL:
 		debuff_timer -= LAVA_DOT_INTERVAL
-		# TODO: emit damage signal when health system exists
-		# For now, just print
-		print("Lava DOT: %d damage" % LAVA_DOT_DAMAGE)
+		# TODO: emit damage signal when health system exists.
+		# Use push_warning so the tick is visible in the editor without
+		# spamming stdout from _physics_process.
+		push_warning("Lava DOT tick: %d damage" % LAVA_DOT_DAMAGE)
 
 
 # func _apply_storm_knockback(_delta: float) -> void:
