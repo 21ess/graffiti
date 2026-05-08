@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 ## 玩家实体 — 用于移动和攻击的实体
-## Debuff 暂时硬编码在 player.gd 中
+## Debuff 暂时硬编码在 player.gd 中，后续考虑拆分模块
 
 const PaintLayerScript = preload("res://entities/terrain/paint/paint_layer.gd")
 
