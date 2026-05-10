@@ -1,4 +1,0 @@
-{"file": "frontend/quality-guidelines.md", "reason": "Code review checklist — forbidden patterns, required patterns for scenes/scripts"}
-{"file": "frontend/type-safety.md", "reason": "GDScript standards compliance — type annotations, naming conventions"}
-{"file": "frontend/component-guidelines.md", "reason": "Scene composition verification — loose coupling, no sibling references"}
-{"file": "backend/error-handling.md", "reason": "Error handling patterns — null checks, assert usage"}

@@ -29,6 +29,12 @@ extends Resource
 @export var sprite_frames: SpriteFrames
 ```
 
+#### When to Use class_name vs preload
+
+- `class_name`: This is a Class, not a Resource. For example, `Player`, `Enemy` etc.
+- `preload`: Want to share a resource across multiple scenes/nodes
+
+
 ### How to Use
 ```gdscript
 # In a scene script
